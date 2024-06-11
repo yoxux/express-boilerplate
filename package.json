@@ -8,7 +8,7 @@
     "backend:dev": "nodemon server.js",
     "frontend:build": "webpack --progress --config webpack.prod.js",
     "frontend:dev": "webpack --progress --config webpack.dev.js",
-    "start": "concurrently --kill-others \"npm run frontend:dev\" \"npm run backend:dev\""
+    "start": "npm run frontend:build & npm run backend:build"
   },
   "keywords": [],
   "author": "",
